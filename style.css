@@ -1,18 +1,21 @@
-html,body, div, a,p{padding: 0; margin: 0;}
+html,body, div, a,p, form, button{padding: 0; margin: 0;}
 body{font-family: sans-serif;}
-.card{min-height: 200px;width: 200px;position: absolute;top:50%; left: 50%;transform: translate(-50%,-50%);overflow: hidden;}
-.card:hover .card-img img{transition: .3s all ease-in-out; transform: scale(1.2);}
+.text-center{text-align: center;}
+
+.card{min-height: 200px;width: 200px;position: absolute;top:50%; left: 50%;transform: translate(-50%,-50%); overflow: hidden;}
+.card:hover .card-img img{transition: .3s ; transform: scale(1.2);}
+.card:hover .name{color: coral;}
 .card-img{height:200px;width: ;overflow: hidden;}
 .card-img img{width: 100%;}
 .card-detail{ width: 100%;}
-.name{color: #000; text-decoration: none; text-align: center;font-weight: bold;display: block;line-height: 1.5;margin: 0 5px;}
+.name{color: #000; text-decoration: none; text-align: center;font-weight: bold;display: block;line-height: 1.5;margin-top: 5px;}
 .id{color:green;font-weight: bold;text-align: center;font-size: 15px;line-height: 2;}
 .gia{color:red; font-size: 15px;font-weight: bold;}
 .gia-goc{text-decoration: line-through;font-size:13px;line-height: 1.6;}
 .hang{font-size: 15px;font-family: fantasy;}
 .soldout{position: absolute;top:5%; left: -14%;background: red; color: #fff; font-weight: bold;
 		transform: rotate(-45deg); padding:5px 25px;}
-.sale{position: absolute;right: 0;bottom: 0; height:45px;display: block;line-height: 1.4; 
+.sale{position: absolute;right: 0;bottom: 10%; height:45px;display: block;line-height: 1.4; 
 	width: 45px;border-radius: 3px;background: red;color: #fff; text-align: center;
 	font-weight: bold; margin-right: 5px;
 }
@@ -27,5 +30,21 @@ body{font-family: sans-serif;}
 	background: red;
 }
 .sale span{font-weight: 400;}
+button{
+	position: relative;
+	width: 130px;
+	height: 30px;
+	margin: 10px 0 0;
+	background: transparent;
+	border: 1px solid coral;
+	font-size: 17px;
+	font-family: ;
+	cursor: pointer;
+	font-weight: bold;
+	transition: .2s;
+	outline: 0;
+}
+button:hover{background: coral;}
+
 #card2{left: 30%;}
 #card3{left: 70%;}
